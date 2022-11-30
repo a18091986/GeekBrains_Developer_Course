@@ -1,8 +1,13 @@
 *.csproj
 
 ../obj/
+../.vscode/
+../vscode/
 
+.vscode/*
+!.vscode/*
 
+**/.vscode/
 
 # Prerequisites
 *.d
