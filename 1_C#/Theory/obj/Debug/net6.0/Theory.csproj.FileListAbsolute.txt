@@ -1,0 +1,15 @@
+C:\Users\admin\Desktop\GeekBrains_Developer_Course\Theory\obj\Debug\net6.0\Theory.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\GeekBrains_Developer_Course\Theory\obj\Debug\net6.0\Theory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\GeekBrains_Developer_Course\Theory\obj\Debug\net6.0\Theory.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\GeekBrains_Developer_Course\Theory\obj\Debug\net6.0\Theory.AssemblyInfo.cs
+C:\Users\admin\Desktop\GeekBrains_Developer_Course\Theory\obj\Debug\net6.0\Theory.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\GeekBrains_Developer_Course\Theory\bin\Debug\net6.0\Theory.exe
+C:\Users\admin\Desktop\GeekBrains_Developer_Course\Theory\bin\Debug\net6.0\Theory.deps.json
+C:\Users\admin\Desktop\GeekBrains_Developer_Course\Theory\bin\Debug\net6.0\Theory.runtimeconfig.json
+C:\Users\admin\Desktop\GeekBrains_Developer_Course\Theory\bin\Debug\net6.0\Theory.dll
+C:\Users\admin\Desktop\GeekBrains_Developer_Course\Theory\bin\Debug\net6.0\Theory.pdb
+C:\Users\admin\Desktop\GeekBrains_Developer_Course\Theory\obj\Debug\net6.0\Theory.dll
+C:\Users\admin\Desktop\GeekBrains_Developer_Course\Theory\obj\Debug\net6.0\refint\Theory.dll
+C:\Users\admin\Desktop\GeekBrains_Developer_Course\Theory\obj\Debug\net6.0\Theory.pdb
+C:\Users\admin\Desktop\GeekBrains_Developer_Course\Theory\obj\Debug\net6.0\Theory.genruntimeconfig.cache
+C:\Users\admin\Desktop\GeekBrains_Developer_Course\Theory\obj\Debug\net6.0\ref\Theory.dll
