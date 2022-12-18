@@ -1,30 +1,30 @@
-int[] GenerateRandomIntArray(int arr_size, int min_val, int max_val) {
-    int[] array = new int[arr_size];
+// int[] GenerateRandomIntArray(int arr_size, int min_val, int max_val) {
+//     int[] array = new int[arr_size];
 
-    for (int i = 0; i < arr_size; i++)
-        array[i] = new Random().Next(min_val, max_val + 1);
+//     for (int i = 0; i < arr_size; i++)
+//         array[i] = new Random().Next(min_val, max_val + 1);
     
-    return array;
-}
+//     return array;
+// }
 
-double[] GenerateRandomDoubleArray(int arr_size, double min_val, double max_val) {
-    double [] array = new double[arr_size];
+// double[] GenerateRandomDoubleArray(int arr_size, double min_val, double max_val) {
+//     double [] array = new double[arr_size];
 
-    for (int i = 0; i < arr_size; i++)
-        array[i] = new Random().NextDouble() * (max_val - min_val) + min_val;
+//     for (int i = 0; i < arr_size; i++)
+//         array[i] = new Random().NextDouble() * (max_val - min_val) + min_val;
     
-    return array;
-}
+//     return array;
+// }
 
-void PrintIntArray(int[] arr) {
-    for (int i = 0; i < arr.Length; i++)
-        Console.Write($"{arr[i]} ");
-}
+// void PrintIntArray(int[] arr) {
+//     for (int i = 0; i < arr.Length; i++)
+//         Console.Write($"{arr[i]} ");
+// }
 
-void PrintDoubleArray(double[] arr) {
-    for (int i = 0; i < arr.Length; i++)
-        Console.Write($"{Math.Round(arr[i], 2)} ");
-}
+// void PrintDoubleArray(double[] arr) {
+//     for (int i = 0; i < arr.Length; i++)
+//         Console.Write($"{Math.Round(arr[i], 2)} ");
+// }
 
 // Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 
