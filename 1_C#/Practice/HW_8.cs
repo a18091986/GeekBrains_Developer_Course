@@ -238,7 +238,6 @@ int[,] GenerateSpiralMatrix(int start_value, int rows, int cols) {
     bool right = true, left = false, up = false, down = false;
     int current_number = start_value;
     while (current_number < rows*cols + start_value) {
-        Show2DArray(out_arr);
         if (right) {
             while (col < cols && out_arr[row, col] == start_value - 1) {
                 out_arr[row, col] = current_number;
@@ -287,14 +286,14 @@ int[,] GenerateSpiralMatrix(int start_value, int rows, int cols) {
     return out_arr;
 }
 
-// Console.WriteLine("Input start value: ");
-// int start_value = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Input rows number: ");
-// int rows = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Input cols number: ");
-// int cols = Convert.ToInt32(Console.ReadLine());
-// int[,] arr = GenerateSpiralMatrix(start_value, rows, cols);
-// Show2DArray_beauty(arr);
+Console.WriteLine("Input start value: ");
+int start_value = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input rows number: ");
+int rows = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input cols number: ");
+int cols = Convert.ToInt32(Console.ReadLine());
+int[,] arr = GenerateSpiralMatrix(start_value, rows, cols);
+Show2DArray_beauty(arr);
 
 // Например, на выходе получается вот такой массив:
 // 01 02 03 04
