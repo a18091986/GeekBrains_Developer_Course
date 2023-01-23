@@ -27,6 +27,16 @@ void ShowStringArray(string [] array) {
     Console.WriteLine();
 }
 
-string [] new_string = GenerateRandomStringArray();
+string [] FilterArrayByStringLength(string [] input_array) {
+    string [] filtered_array = new string [input_array.Length];
+    int filtered_array_position = 0;
+    for (int i = 0; i < input_array.Length; i++)
+        if (input_array[i].Length <= 3)
+            filtered_array[filtered_array_position++] = input_array[i];
+    return filtered_array;
+}
 
+string [] new_string = GenerateRandomStringArray();
 ShowStringArray(new_string);
+string [] filtered_array = FilterArrayByStringLength(new_string);
+ShowStringArray(filtered_array);
