@@ -35,16 +35,16 @@
 // ---------------------------------------------Task_3-----------------------------------------------
 // Задайте значения M и N. Напишите программу, которая выведет все натуральные числа в промежутке от M до N.
 
-void DigitsRangePrintMN(int M, int N) {
-    int min = (M < N) ? M : N;
-    int max = (M < N) ? N : M;
-    if (min < max) {
-        Console.Write($"{min} ");
-        DigitsRangePrintMN(min + 1, max);
-    } else {
-        Console.Write($"{max} ");
-    }
-}
+// void DigitsRangePrintMN(int M, int N) {
+//     int min = (M < N) ? M : N;
+//     int max = (M < N) ? N : M;
+//     if (min < max) {
+//         Console.Write($"{min} ");
+//         DigitsRangePrintMN(min + 1, max);
+//     } else {
+//         Console.Write($"{max} ");
+//     }
+// }
 
 // Console.Write("Input M: ");
 // int M = Convert.ToInt32(Console.ReadLine());
@@ -60,22 +60,22 @@ void DigitsRangePrintMN(int M, int N) {
 // Напишите программу, которая на вход принимает два числа A и B, и возводит число А в целую степень B.
 
 
-double ApowB(int a, int b) {
+// double ApowB(int a, int b) {
 
-    if (b >= 1) 
-        return a * ApowB(a, b - 1);
-    else if (b <= -1)
-        return (1.0 / a) * ApowB(a, b + 1);
-    else
-        return 1;
-}
+//     if (b >= 1) 
+//         return a * ApowB(a, b - 1);
+//     else if (b <= -1)
+//         return (1.0 / a) * ApowB(a, b + 1);
+//     else
+//         return 1;
+// }
 
-Console.Write("Input a: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input b: ");
-int b = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input a: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input b: ");
+// int b = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(ApowB(a, b));
+// Console.WriteLine(ApowB(a, b));
 
 
 
