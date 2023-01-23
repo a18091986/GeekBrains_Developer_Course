@@ -45,6 +45,8 @@ string [] FilterArrayByStringLength(string [] input_array) {
 }
 
 string [] new_string = GenerateRandomStringArray();
+Console.WriteLine("Random string array: ");
 ShowStringArray(new_string);
 string [] filtered_array = FilterArrayByStringLength(new_string);
+Console.WriteLine("String array after filtration elements by length: ");
 ShowStringArray(filtered_array);
