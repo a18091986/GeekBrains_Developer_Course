@@ -16,9 +16,14 @@ string [] GenerateRandomStringArray() {
 
 void ShowStringArray(string [] array) {
     Console.WriteLine();
+    Console.Write("[");
     for (int j = 0; j < array.Length; j++) {
-        Console.Write(array[j] + " ");
+        if (j != array.Length - 1)
+            Console.Write("'" + array[j] + "'" + ", ");
+        else
+            Console.Write("'" + array[j] + "'");
     }
+    Console.Write("]");
     Console.WriteLine();
 }
 
