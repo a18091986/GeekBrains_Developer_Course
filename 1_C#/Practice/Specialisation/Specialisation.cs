@@ -15,7 +15,6 @@ string [] GenerateRandomStringArray() {
 }
 
 void ShowStringArray(string [] array) {
-    Console.WriteLine();
     Console.Write("[");
     for (int j = 0; j < array.Length; j++) {
         if (j != array.Length - 1)
