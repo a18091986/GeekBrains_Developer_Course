@@ -27,8 +27,16 @@ void ShowStringArray(string [] array) {
     Console.WriteLine();
 }
 
+int CountOfShortElements(string [] input_array) {
+    int count = 0;
+    for (int i = 0; i < input_array.Length; i++)
+        if (input_array[i].Length <= 3)
+            count++;
+    return count;
+}
+
 string [] FilterArrayByStringLength(string [] input_array) {
-    string [] filtered_array = new string [input_array.Length];
+    string [] filtered_array = new string [CountOfShortElements(input_array)];
     int filtered_array_position = 0;
     for (int i = 0; i < input_array.Length; i++)
         if (input_array[i].Length <= 3)
