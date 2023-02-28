@@ -1,4 +1,5 @@
 import random
+
 from usefull_functions import print_separator_text
 
 
@@ -21,6 +22,7 @@ print(f"На столе {coins_count} монетки.\n"
       f"Из них решкой вверх: {sum(coins_state)}. Решкой вниз: {len(coins_state) - sum(coins_state)}\n"
       f"Состояние монеток: {coins_state}\n"
       f"Минимальное число монеток, которые нужно перевернуть: {coins_min_revert_count(coins_state)}")
+
 
 # ----------------------------------------------------------------------------------
 
@@ -56,7 +58,7 @@ print(f"Петя загадал: {number_for_guess_1} и {number_for_guess_2}\n"
 # ----------------------------------------------------------------------------------
 def power_of_two_smaller_than_number(number: str) -> None:
     x = 0
-    while 2**x < number:
+    while 2 ** x < number:
         print(f"Степень двойки: {x}, 2^{x} = {2 ** x}")
         x += 1
 
