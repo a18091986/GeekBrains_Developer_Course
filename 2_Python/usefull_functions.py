@@ -1,6 +1,5 @@
 from colorama import Fore, Style
 
-
 def print_separator_text(separator="*", text=''):
     print(f"{Fore.GREEN}{'*' * 100}\n{text}\n{'*' * 100}{Style.RESET_ALL}")
 
@@ -21,3 +20,5 @@ def my_print(msg: str, color='green', separator_sym="*", separator_before=False,
         print(f"{msg}")
     if separator_after:
         print(f"{Fore.RED}{separator_sym * 300}{Style.RESET_ALL}")
+
+
