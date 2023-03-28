@@ -34,7 +34,7 @@ public class files {
             String str;
             while ((str = br.readLine()) != null)
                 System.out.println(str);
-                br.close()
+                br.close();
             } catch (IOException ex) {
                 System.out.println(ex.getMessage());
             }

@@ -5,9 +5,11 @@
 ../.vscode/
 ../vscode/
 
+
 .vscode/*
 !.vscode/*
-
+**/out
+*.iml
 **/.vscode/
 
 # Prerequisites
