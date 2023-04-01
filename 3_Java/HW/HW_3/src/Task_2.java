@@ -1,7 +1,9 @@
 package src;
 
 import java.sql.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Task_2 {
 
@@ -23,5 +25,21 @@ public class Task_2 {
             if (arr[i] % 2 != 0)
                 out_arr[k++] = arr[i];
         return out_arr;
+    }
+
+    public static ArrayList <Integer> remove_even_ind_by_lst(ArrayList <Integer> lst) {
+        ArrayList <Integer> out_lst = new ArrayList<>();
+        for (int i = 0; i < lst.size(); i++)
+            if (i % 2 != 0)
+                out_lst.add(lst.get(i));
+        return out_lst;
+    }
+    public static ArrayList <Integer> remove_even_elems_by_lst(ArrayList <Integer> lst) {
+        ArrayList <Integer> out_lst = new ArrayList<>();
+        for (int el : lst)
+            if (el % 2 != 0)
+                out_lst.add(el);
+
+        return out_lst;
     }
 }

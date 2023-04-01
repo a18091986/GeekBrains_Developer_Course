@@ -1,6 +1,8 @@
 package src;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,6 +17,7 @@ public class Main {
         System.out.println("Отсортированный по алгоритму слиянием массив:\n" + Arrays.toString(arr_1));
 
         System.out.println("----------------------------------------TASK_2----------------------------------------");
+        System.out.println("-------------------------------------Через массивы--------------------------------------");
 
         int [] arr_2 = Common.random_int_array_generate(arr_length);
         System.out.println("Сгенерированный массив:\n" + Arrays.toString(arr_2));
@@ -23,14 +26,34 @@ public class Main {
         System.out.println("Массив без элементов на четных индексах изначального массива:\n" + Arrays.toString(arr_2_without_even_ind));
         System.out.println("Массив без четных элементов:\n" + Arrays.toString(arr_2_without_even_elems));
 
+        System.out.println("-----------------------------------С помощью списков-----------------------------------");
+
+        ArrayList<Integer> lst_1= Common.random_int_list_generate(7,15,10);
+        System.out.println("Сгенерированный список:\n" + lst_1);
+        ArrayList<Integer> lst_1_without_even_ind = Task_2.remove_even_ind_by_lst(lst_1);
+        ArrayList<Integer> lst_1_without_even_elems_by_lst = Task_2.remove_even_elems_by_lst(lst_1);
+
+        System.out.println("Список без элементов на четных индексах изначального списка:\n" + lst_1_without_even_ind);
+        System.out.println("Список без четных элементов:\n" + lst_1_without_even_elems_by_lst);
+
         System.out.println("----------------------------------------TASK_3----------------------------------------");
+        System.out.println("-------------------------------------Через массивы--------------------------------------");
 
         int [] arr_3 = Common.random_int_array_generate(arr_length);
         System.out.println("Сгенерированный массив:\n" + Arrays.toString(arr_3));
 
         Task_3 tk3 = new Task_3(arr_3);
-        System.out.printf("Минимальный элемент массива %d\nМаксимальный элемент массива %d\nСреднее %f",
+        System.out.printf("Минимальный элемент массива %d\nМаксимальный элемент массива %d\nСреднее %f\n",
                 tk3.min, tk3.max, tk3.mean);
+
+        System.out.println("-----------------------------------С помощью списков-----------------------------------");
+
+        ArrayList<Integer> lst_2= Common.random_int_list_generate(7,15,5);
+        System.out.println("Сгенерированный список:\n" + lst_2);
+
+        Task_31 tk31 = new Task_31(lst_2);
+        System.out.printf("Минимальный элемент списка %d\nМаксимальный элемент списка %d\nСреднее %f\n",
+                tk31.min, tk31.max, tk31.mean);
 
     }
 }
