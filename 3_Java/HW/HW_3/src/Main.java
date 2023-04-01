@@ -2,6 +2,7 @@ package src;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -36,6 +37,19 @@ public class Main {
         System.out.println("Список без элементов на четных индексах изначального списка:\n" + lst_1_without_even_ind);
         System.out.println("Список без четных элементов:\n" + lst_1_without_even_elems_by_lst);
 
+        System.out.println("-----------------------------------С помощью списков 2----------------------------");
+
+        ArrayList<Integer> lst_11= Common.random_int_list_generate(7,15,10);
+        ArrayList<Integer> lst_11copy = (ArrayList<Integer>) lst_11.clone();
+        System.out.println("Сгенерированный список:\n" + lst_11);
+
+        Task_2.remove_even_ind_in_list(lst_11);
+        Task_2.remove_even_in_list(lst_11copy);
+
+        System.out.println("Список без элементов на четных индексах изначального списка:\n" + lst_11);
+        System.out.println("Список без четных элементов:\n" + lst_11copy);
+
+
         System.out.println("----------------------------------------TASK_3----------------------------------------");
         System.out.println("-------------------------------------Через массивы--------------------------------------");
 
@@ -52,9 +66,17 @@ public class Main {
         System.out.println("Сгенерированный список:\n" + lst_2);
 
         Task_31 tk31 = new Task_31(lst_2);
-        System.out.printf("Минимальный элемент списка %d\nМаксимальный элемент списка %d\nСреднее %f\n",
-                tk31.min, tk31.max, tk31.mean);
-
+        System.out.printf("""
+                        Минимальный элемент списка через самописную функцию: %d
+                        Максимальный элемент списка через самописную функцию: %d
+                        """,
+                          tk31.min, tk31.max);
+        System.out.printf("""
+                        Минимальный элемент списка с помощью Сollections: %d
+                        Максимальный элемент списка c помощью Collections: %d
+                        """,
+                          Collections.min(lst_2), Collections.max(lst_2));
+        System.out.printf("Среднее значение списка: %f\n", tk31.mean);
     }
 }
 

@@ -3,6 +3,7 @@ package src;
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class Task_2 {
@@ -41,5 +42,17 @@ public class Task_2 {
                 out_lst.add(el);
 
         return out_lst;
+    }
+    public static void remove_even_ind_in_list(ArrayList <Integer> lst) {
+        for (int i = 0; i < lst.size(); i++)
+            lst.remove(i);
+    }
+    public static void remove_even_in_list(ArrayList <Integer> lst) {
+        Iterator <Integer> lst_iter = lst.iterator();
+        while (lst_iter.hasNext()) {
+            int elem = lst_iter.next();
+            if (elem % 2 == 0)
+                lst_iter.remove();
+        }
     }
 }
