@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What is your name?</title>
+    <script src="scripts.js" defer></script>
+    <title>Интересные места Москвы</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <script>
-        function printName(name){
-            alert(`Your name is ${name}`)
-        }
-        let name = prompt(`What is you name?`, `type here`)
-        printName(name)
-    </script>
+<body class="light">
+    <div class="header content_with_background">
+        <h1>Интересные места Москвы</h1>
+    </div>
+    <div class="content ">
+        <button type="button" class="Theme_button" onclick="StyleChange()">Change Style</button>
+        <p><strong> Куда стоит сходить:</strong></p>
+        <ul type="circle">
+            <li><a href="place_1.html">Смотровая площадка РАН</a></li>
+            <li><a href="place_2.html">Сад Эрмитаж</a></li>
+            <li><a href="place_3.html">Музей Эмоций</a></li>
+        </ul>   
+    </div>
+    <div class="footer">
+    <p1>Contacts: +7 777 777 7777</p1>
+    <p>
+        <input type="text" placeholder="Input your email" id="input_email">
+        <button type="button" onclick="on_click();">Send</button>
+    </p>
+    </div>
 </body>
 </html>
