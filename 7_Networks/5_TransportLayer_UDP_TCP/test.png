@@ -1,0 +1,10 @@
+modify=20190429120246;perm=fle;type=cdir;unique=CA04U911BC2CD;UNIX.group=1119456;UNIX.groupname=wp1119456;UNIX.mode=0750;UNIX.owner=1119456;UNIX.ownername=ftp1119456-nureintest; .
+modify=20190429120246;perm=fle;type=pdir;unique=CA04U911BC2CD;UNIX.group=1119456;UNIX.groupname=wp1119456;UNIX.mode=0750;UNIX.owner=1119456;UNIX.ownername=ftp1119456-nureintest; ..
+modify=20201013160524;perm=fle;type=dir;unique=CA04U911F5AFD;UNIX.group=1119456;UNIX.groupname=wp1119456;UNIX.mode=0750;UNIX.owner=1119456;UNIX.ownername=ftp1119456-nureintest; Correct Files
+modify=20140114111857;perm=fle;type=dir;unique=CA04U298086;UNIX.group=1119456;UNIX.groupname=wp1119456;UNIX.mode=0750;UNIX.owner=1119456;UNIX.ownername=ftp1119456-nureintest; EICAR-TEST-FILES
+modify=20180220105324;perm=fle;type=dir;unique=CA04U911F5AFE;UNIX.group=1119456;UNIX.groupname=wp1119456;UNIX.mode=0750;UNIX.owner=1119456;UNIX.ownername=ftp1119456-nureintest; Exe inside a Zip
+modify=20131211160706;perm=fle;type=dir;unique=CA04U911F5AFF;UNIX.group=1119456;UNIX.groupname=wp1119456;UNIX.mode=0750;UNIX.owner=1119456;UNIX.ownername=ftp1119456-nureintest; Exe with wrong File Extension
+modify=20131211194625;perm=fle;type=dir;unique=CA04U298088;UNIX.group=1119456;UNIX.groupname=wp1119456;UNIX.mode=0750;UNIX.owner=1119456;UNIX.ownername=ftp1119456-nureintest; Zip with wrong File Extension
+modify=20190429125014;perm=fle;type=dir;unique=CA04U180B854DB;UNIX.group=1119456;UNIX.groupname=wp1119456;UNIX.mode=0750;UNIX.owner=1119456;UNIX.ownername=ftp1119456-nureintest; Encrypted Office Docs
+modify=20180220105342;perm=fle;type=dir;unique=CA04U298087;UNIX.group=1119456;UNIX.groupname=wp1119456;UNIX.mode=0750;UNIX.owner=1119456;UNIX.ownername=ftp1119456-nureintest; Exe inside encrypted Zip
+modify=20190429121152;perm=adfr;size=19285;type=file;unique=CA04U911BC2A0;UNIX.group=1119456;UNIX.groupname=wp1119456;UNIX.mode=0640;UNIX.owner=1119456;UNIX.ownername=ftp1119456-nureintest; index.php
