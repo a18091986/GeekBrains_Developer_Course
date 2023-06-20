@@ -42,11 +42,6 @@ public class Main {
             // рекурсивно преобразуем в двоичную кучу затронутое поддерево
             heapify(arr, h_size, largest);
         }
-
-
-
-
-
     }
 
 }
