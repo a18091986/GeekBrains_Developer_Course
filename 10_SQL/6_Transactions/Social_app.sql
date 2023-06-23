@@ -1,4 +1,6 @@
-use gb_mobile_phones;
+DROP DATABASE IF EXISTS lesson_4;
+CREATE DATABASE lesson_4;
+USE lesson_4;
 
 -- пользователи
 DROP TABLE IF EXISTS users;
