@@ -1,0 +1,55 @@
+####################################################################################################
+Задание: необходимо продемонстрировать изоляцию одного и того же приложения (как решено на семинаре - командного интерпретатора) в различных пространствах имен.
+####################################################################################################
+
+
+mkdir GB
+chroot GB /bin/bash
+mkdir GB/bin
+cp /bin/bash GB/bin
+ldd /bin/bash
+mkdir GB/lib64
+mkdir GB/lib
+cp /lib/x86_64-linux-gnu/libdl.so.2 GB/lib
+cp /lib/x86_64-linux-gnu/libtinfo.so.6 GB/lib
+cp /lib/x86_64-linux-gnu/libc.so.6 GB/lib
+cp /lib64/ld-linux-x86-64.so.2 GB/lib64
+sudo chroot GB /bin/bash
+ldd /usr/bin/ls
+
+cp /lib/x86_64-linux-gnu/libselinux.so.1 GB/lib/
+cp /lib/x86_64-linux-gnu/libc.so.6 GB/lib/
+cp /lib/x86_64-linux-gnu/libpcre2-8.so.0 GB/lib/
+cp /lib/x86_64-linux-gnu/libdl.so.2 GB/lib/
+cp /lib64/ld-linux-x86-64.so.2 GB/lib64/
+cp /lib/x86_64-linux-gnu/libpthread.so.0 GB/lib/
+
+sudo chroot GB /bin/bash
+ls -la
+
+####################################################################################################
+
+behappyman@HP-MONOBLOCK-DOM:~$ sudo ip netns add test_eth
+behappyman@HP-MONOBLOCK-DOM:~$ ip netns
+test_eth
+behappyman@HP-MONOBLOCK-DOM:~$ sudo ip netns exec test_eth bash
+root@HP-MONOBLOCK-DOM:/home/behappyman# ip a
+1: lo: <LOOPBACK> mtu 65536 qdisc noop state DOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+behappyman@HP-MONOBLOCK-DOM:~$ sudo ip link add virt_eth_1 type veth peer name veth1
+behappyman@HP-MONOBLOCK-DOM:~$ ip a
+4: veth1@virt_eth_1: <BROADCAST,MULTICAST,M-DOWN> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 42:0e:f1:3e:0c:47 brd ff:ff:ff:ff:ff:ff
+5: virt_eth_1@veth1: <BROADCAST,MULTICAST,M-DOWN> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether e2:12:d3:5f:29:cf brd ff:ff:ff:ff:ff:ff
+
+behappyman@HP-MONOBLOCK-DOM:~$ sudo ip link set virt_eth_1 netns test_eth
+behappyman@HP-MONOBLOCK-DOM:~$ sudo ip addr add 10.0.0.1/24 dev veth1
+behappyman@HP-MONOBLOCK-DOM:~$ sudo ip link set dev veth1 up
+root@HP-MONOBLOCK-DOM:/home/behappyman# sudo ip addr add 10.0.0.2/24 dev virt_eth_1
+root@HP-MONOBLOCK-DOM:/home/behappyman# sudo ip link set dev virt_eth_1 up
+
+behappyman@HP-MONOBLOCK-DOM:~$ ping 10.0.0.2
+PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.
+64 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=0.112 ms
+64 bytes from 10.0.0.2: icmp_seq=2 ttl=64 time=0.046 ms
