@@ -1,0 +1,19 @@
+#######################################################
+1) запустить контейнер с ubuntu, используя механизм LXC
+2) ограничить контейнер 256 Мб ОЗУ и проверить, что ограничение работает
+########################################################
+
+root@ubuntu-main:/sys/fs/cgroup/mytestgroup# apt install lxc-templates uidmap
+
+root@ubuntu-main:/sys/fs/cgroup/mytestgroup# lxc-create -n test123 -t ubuntu
+
+root@ubuntu-main:/sys/fs/cgroup/mytestgroup# lxc-start -n test123
+
+behappyman@ubuntu-main:~$ sudo lxc-attach -n test123
+
+behappyman@ubuntu-main:~$ sudo lxc-cgroup -n test123 memory.max 256M
+
+########################################################
+*: настроить автоматическую маршрутизацию между контейнерами. Адреса можно взять: 10.0.12.0/24 и 10.0.13.0/24.
+########################################################
+

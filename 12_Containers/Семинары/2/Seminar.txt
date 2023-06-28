@@ -1,0 +1,33 @@
+1. cgroups - утилита, позволяющая ограничивать ресурсы,выделенные процессу
+
+
+####################################################################
+
+behappyman@ubuntu-main:~/containers_gb$ sudo su
+root@ubuntu-main:/home/behappyman/containers_gb# apt update
+root@ubuntu-main:/home/behappyman/containers_gb# apt install cgroup-tools
+root@ubuntu-main:/home/behappyman/containers_gb# unshare --fork --pid --mount-proc bash
+
+root@ubuntu-main:/home/behappyman/containers_gb# cgcreate -a $USER -g memory:mytestgroup -g cpu:mytestgroup
+
+
+root@ubuntu-main:/home/behappyman/containers_gb# ls /sys/fs/cgroup/mytestgroup/
+
+root@ubuntu-main:/home/behappyman/containers_gb# cd /sys/fs/cgroup/mytestgroup/
+
+root@ubuntu-main:/sys/fs/cgroup/mytestgroup# cat memory.max
+
+root@ubuntu-main:/sys/fs/cgroup/mytestgroup# free -m
+ 
+####################################################################
+
+
+root@ubuntu-main:/sys/fs/cgroup/mytestgroup# apt install lxc-templates uidmap
+
+root@ubuntu-main:/sys/fs/cgroup/mytestgroup# lxc-create -n test123 -t ubuntu
+
+root@ubuntu-main:/sys/fs/cgroup/mytestgroup# lxc-start -n test123
+
+behappyman@ubuntu-main:~$ sudo lxc-attach -n test123
+
+behappyman@ubuntu-main:~$ sudo lxc-cgroup -n test123 memory.max 256M
