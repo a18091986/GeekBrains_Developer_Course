@@ -3,7 +3,7 @@
 ### разворачиваем контейнер с mariadb
 
 behappyman@gbdocker:~$ sudo docker run --name MariaDB -e MARIADB_ROOT_PASSWORD=test123 -d mariadb:10.10.2
-root@gbdocker:/home/behappyman# docker exec -it 58c bash
+
 
 ### разворачиваем контейнер с phpmyadmin и линкуем (связываем по сети) его с контейнером с mariadb
 
