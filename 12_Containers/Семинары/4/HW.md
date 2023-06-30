@@ -1,3 +1,0 @@
-FROM mariadb:10.10.2
-ENV MARIADB_ROOT_PASSWORD=test123
-VOLUME $(pwd)/maridbconf /etc/mysql/
