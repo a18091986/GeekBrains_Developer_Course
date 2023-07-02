@@ -6,6 +6,7 @@ notes.json
 ../.vscode/
 ../vscode/
 
+*.bkp
 
 .vscode/*
 !.vscode/*
