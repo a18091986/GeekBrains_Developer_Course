@@ -48,8 +48,8 @@
 
 ### скриншоты
    
-![modelling](/images_for_readme/1.png)
-![stat_all_block](/images_for_readme/2.png)
-![stat_single_block](/images_for_readme/3.png)
-![stat_map](/images_for_readme/4.png)
-![charge](/images_for_readme/5.png)
+![modelling](https://github.com/a18091986/GeekBrains_Developer_Course/blob/develop/!_Graduate_Work/FinalProject/images_for_readme/1.png)
+![stat_all_block](https://github.com/a18091986/GeekBrains_Developer_Course/blob/develop/!_Graduate_Work/FinalProject/images_for_readme/2.png)
+![stat_single_block](https://github.com/a18091986/GeekBrains_Developer_Course/blob/develop/!_Graduate_Work/FinalProject/images_for_readme/3.png)
+![stat_map](https://github.com/a18091986/GeekBrains_Developer_Course/blob/develop/!_Graduate_Work/FinalProject/images_for_readme/4.png)
+![charge](https://github.com/a18091986/GeekBrains_Developer_Course/blob/develop/!_Graduate_Work/FinalProject/images_for_readme/5.png)
