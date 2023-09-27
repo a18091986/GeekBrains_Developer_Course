@@ -1,6 +1,8 @@
 *.csproj
 **/net6.0
 notes.json
+*.pdf
+
 
 ../obj/
 ../.vscode/
