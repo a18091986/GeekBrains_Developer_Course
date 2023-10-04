@@ -67,13 +67,13 @@ class BlockData(SystemComponent):
     def __post_init__(self):
         self.speed_before_stop = self.speed
 
-
 class Tag(TagData):
     pass
 
 
 class Block(BlockData):
     pass
+
 
 
 @dataclass
