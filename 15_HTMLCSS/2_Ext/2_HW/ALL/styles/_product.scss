@@ -1,0 +1,235 @@
+@import 'vars';
+
+.breadcrumbs {
+    background: #F8F3F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $accentColor;
+    }
+
+    &__items {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+
+        .fontRed {
+            font-weight: 700;
+            color: $accentColor;
+        }
+    }
+}
+
+.slider {
+    background: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 11px;
+    padding-bottom: 42px;
+
+    &__button_left:hover .slide__color {
+        fill: $accentColor;
+    }
+
+    &__button_right:hover .slide__color {
+        fill: $accentColor;
+    }
+}
+
+.spotlight {
+    background: #FFFFFF;
+}
+
+
+.customization {
+    border: 1px solid #EAEAEA;
+    max-width: 1140px;
+    max-height: 600px;
+    background: #FFFFFF;
+    display: grid;
+    justify-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    position: relative;
+    bottom: 64px;
+    margin-bottom: 65px;
+
+    &__title {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: $accentColor;
+        margin-bottom: 12px;
+    }
+
+    &__line-top {
+        margin-bottom: 12px;
+    }
+
+    &__heading {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        margin-bottom: 48px;
+    }
+
+    &__text {
+        width: 554px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #5E5E5E;
+        margin-bottom: 32px;
+    }
+
+    &__price {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #EF5B70;
+        margin-bottom: 65px;
+    }
+
+    &__line-bottom {
+        margin-bottom: 65px;
+    }
+
+    &__choose {
+        display: flex;
+        gap: 22px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        margin-bottom: 48px;
+
+        &_color {
+            display: flex;
+            gap: 9px;
+        }
+
+        &_size {
+            display: flex;
+            gap: 9px;
+        }
+
+        &_quantity {
+            display: flex;
+            gap: 9px;
+        }
+    }
+
+    .center__button {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+    }
+
+    .center__button:hover svg path {
+        fill: white;
+    }
+}
+
+@media(max-width:1024px) {
+    .item_delete {
+        display: none;
+    }
+
+    .slider {
+        padding-top: 85px;
+        padding-bottom: 85px;
+
+        &__photo_img {
+            width: 466px;
+        }
+    }
+
+    .customization {
+        bottom: 0px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .breadcrumbs {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .slider {
+
+        &__photo {
+            width: 374px;
+
+            &__button_left {
+                position: absolute;
+            }
+
+            &__photo_img {
+                position: relative;
+                width: 374px;
+                right: 0;
+            }
+
+            &__button_right {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+
+    .customization {
+        padding-left: calc(50% - 187px);
+        padding-right: calc(50% - 187px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__text {
+            width: 326px;
+            line-height: 20px;
+        }
+
+        &__price {
+            line-height: 31px;
+            margin-bottom: 32px;
+        }
+
+        &__line-bottom {
+            margin-bottom: 48px;
+        }
+
+        &__line-bottom-vector {
+            width: 175px;
+        }
+
+        &__choose {
+            max-width: 304px;
+            font-family: Lato;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 12px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+    }
+}
