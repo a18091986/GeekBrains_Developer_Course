@@ -16,6 +16,9 @@ cntrl + , -> word wrap
 - структура - ! -> Tab
 - вводим название тега -> tab
 - lorem150 -> Tab
+- p*3
+- link:css
+
 
 
 # иконки
@@ -24,3 +27,18 @@ cntrl + , -> word wrap
 
 # свободно распространяемые картинки
 - https://www.freepik.com/search?format=search&orientation=portrait&query=student
+
+
+# селекторы
+- id (#id_name)
+- tag (tag)
+- class (.class_name)
+
+# единицы измерения
+- относительные (px, %, em - высота текущего шрифта (высота строчки))
+- абсолютные ()
+
+# 
+
+
+
