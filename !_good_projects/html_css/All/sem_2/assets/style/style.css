@@ -1,0 +1,120 @@
+h1 {
+  color: #222222;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  font-size: larger;
+}
+
+.nav-item {
+  color: cornflowerblue;
+  font-size: 20px;
+  line-height: 20px;
+}
+.nav-item:hover {
+  color: red;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.img {
+  width: 450px;
+  border-radius: 10px;
+
+  /* height: 100px; */
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: larger;
+  align-items: center;
+}
+
+form {
+  border: 2px salmon solid;
+  width: 425px;
+  border-radius: 10px;
+}
+
+form input {
+  width: 400px;
+  padding: 5px;
+  margin: 5px;
+}
+
+form button {
+  padding: 5px;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+p {
+  margin: 0px;
+}
+
+.wrapper {
+  border: 5px solid red;
+  margin: 5px;
+  padding: 10px;
+  width: 400px;
+}
+
+.rubric {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7d7987;
+}
+
+.second-header {
+  color: coral;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 80px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.send {
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}

@@ -1,0 +1,46 @@
+.header {
+  background-color: aqua;
+}
+
+.left-menu {
+  background-color: red;
+  min-width: 100px;
+}
+
+.right-menu {
+  background-color: blue;
+  min-width: 100px;
+}
+
+.footer {
+  background-color: brown;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.main {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 800px;
+  min-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}

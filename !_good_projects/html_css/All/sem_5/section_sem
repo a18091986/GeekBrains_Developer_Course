@@ -1,0 +1,101 @@
+<section class="services center">
+        <div class="services__item">
+            <img class="services__item-image" src="./assets/images/services.png">
+            <div class="services__item-title">
+                Expert Prespective Agency Awards
+            </div>
+            <div class="services__item-desc">
+                Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.
+            </div>
+        </div>
+        <div class="services__item">
+            <img class="services__item-image" src="./assets/images/services.png">
+            <div class="services__item-title">
+                Expert Prespective Agency Awards
+            </div>
+            <div class="services__item-desc">
+                Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.
+            </div>
+        </div>
+        <div class="services__item">
+            <img class="services__item-image" src="./assets/images/services.png">
+            <div class="services__item-title">
+                Expert Prespective Agency Awards
+            </div>
+            <div class="services__item-desc">
+                Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.
+            </div>
+        </div>
+        <div class="services__item item-big">
+            <img class="services__item-image-big" src="./assets/images/services-big.png">
+            <div class="services__item-title">
+                In print, and publishing industries for previewing layouts and visual mockups.
+            </div>
+            <div class="services__item-desc">
+                Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.
+            </div>
+        </div>
+        <div class="services__item">
+            <img class="services__item-image" src="./assets/images/services.png">
+            <div class="services__item-title">
+                Expert Prespective Agency Awards
+            </div>
+            <div class="services__item-desc">
+                Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.
+            </div>
+        </div>
+        <div class="services__item">
+            <img class="services__item-image" src="./assets/images/services.png">
+            <div class="services__item-title">
+                Expert Prespective Agency Awards
+            </div>
+            <div class="services__item-desc">
+                Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.
+            </div>
+        </div>
+
+    </section>
+
+23:20
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 264px;
+}
+.services__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    gap: 30px;
+    border-radius: 10px;
+    background: #132035;
+    color: white;
+}
+.services__item-image {
+    width: 98px;
+    height: 103px;
+}
+.services__item-image-big {
+    width: 306px;
+    height: 322px;
+}
+.item-big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.services__item-title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 125%;
+    opacity: 0.7;
+}
+.services__item-desc {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 160%;
+    opacity: 0.7;
+}

@@ -20,14 +20,10 @@ cntrl + , -> word wrap
 - link:css
 - .text - div class="text"
 - h1.title
+- .item.item$*6 
 
 
-# иконки
-- https://fontawesome.com/icons/vk?f=brands&s=solid&an=shake
 
-
-# свободно распространяемые картинки
-- https://www.freepik.com/search?format=search&orientation=portrait&query=student
 
 
 # селекторы
@@ -58,4 +54,58 @@ span, a, i, strong - строчный элепмент
 }
 
 
+
+# значения свойства display
+- none (скрыть)
+- block (блочный)
+- inline (строчный)
+- inline-block (строчно-блочный)
+- flex (гибкий) - наделение контейнера способностью изменять ширину или высоту для поддержки всех видов дисплеев и разных разрешений экранов
+-- сжимаем и растягиваем
+-- выравнивание по вертикали и по горизонтали
+-- элементы могут выстраиваться в несколько строк
+-- возможность формирования блока справа налево
+-- main axis, cross axis, main-start, main-end, main size, cross size, cross-start, cross-end
+
+justify-content: flex-start, justify-content: flex-end, justify-content: center, justify-content: space-between, justify-content: space-around
+align-items: stretch, align-items: center, align-items: flex-start, align-items: flex-end, align-items: baseline
+
+- grid layout (сетка)
+
+-- распределение элементов не только горизонтально, но и вертикально
+-- объединеине ячеек
+-- гибкая адаптивная сетка
+-- поддержка браузеров
+
+-- grid lines
+-- grid track - пространство между двумя соседними линиями сетки
+-- grid cell - пространство ограниченное четырьмя линиями сетки
+-- grid items - элементы, которые назначаются областям сетки
+
+-- grid-template-columns
+-- grid-template-rows
+-- gap
+px, %, fr (fraction - равные части), auto
+
+repeat(5, 200px)
+
+# значения свойства position
+
+- точно определяет позицию блока относительно окна
+
+-- static
+-- relative
+-- absolute
+-- fixed
+-- inherit
+
+# иконки
+- https://fontawesome.com/icons/vk?f=brands&s=solid&an=shake
+
+# онлайн-тренажер
+- flexbox froggy
+- grid garden
+
+# свободно распространяемые картинки
+- https://www.freepik.com/search?format=search&orientation=portrait&query=student
 

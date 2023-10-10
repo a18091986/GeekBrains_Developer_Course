@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.registration {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+}
+
+.about-me label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.about-me label input {
+    border-radius: 10px;
+    height: 30px;
+    width: 70%;
+    text-align: center;
+}
+
+/* Add switch */
+
+
+#switch[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.switch_chk {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 22px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.switch_chk:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 45px;
+    transition: 0.3s;
+}
+
+#switch:checked+.switch_chk {
+    background: #bada55;
+}
+
+#switch:checked+.switch_chk:after {
+    left: calc(100% - 1px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 750px;
+}

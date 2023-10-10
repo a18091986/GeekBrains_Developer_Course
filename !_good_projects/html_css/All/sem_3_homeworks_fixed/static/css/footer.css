@@ -1,0 +1,7 @@
+.logos-list {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 162.45px;
+}

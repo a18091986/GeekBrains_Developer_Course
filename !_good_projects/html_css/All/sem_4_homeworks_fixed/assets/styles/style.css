@@ -1,0 +1,291 @@
+@font-face{
+    font-family: "Gilroy-Semibold";
+    src: url("../fonts/gilroy-semibold.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "Gilroy-Bold";
+    src: url("../fonts/gilroy-bold.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "Gilroy-Medium";
+    src: url("../fonts/gilroy-medium.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "Gilroy-Regular";
+    src: url("../fonts/gilroy-regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.link-nav-menu {
+    text-decoration: none;
+    color: black;
+    font-family: "Gilroy-Medium";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.activate {
+    color: #F25822;
+    font-family: "Gilroy-Semibold";
+}
+
+.with-sign {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-post {
+    margin-top: 84px;
+    display: flex;
+    align-content: space-between;
+}
+
+.post-title {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.description {
+    color: #888;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 17px;
+}
+
+.button-wrap {
+    margin-top: 37px;
+    display: flex;
+    gap: 72px;
+    align-content: center;
+}
+
+.start {
+    width: 140px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #F25822;
+    border-width: 0;
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.link-video {
+    color: #AAA;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.brands {
+    margin-top: 163px;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.brands img {
+    margin-top: 97px;
+    margin-bottom: 96px;
+}
+
+.our-choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    align-content: center;
+    width: calc(100% - 359px * 2);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.layer-choice {
+    border: 1px solid black;
+    padding: 40px 30px 30px 40px;
+}
+
+.layer-choice .title {
+    margin-top: 25px;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.desc-choice {
+    margin-top: 17px;
+    color: #666;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.read-more {
+    margin-top: 25px;
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.why-should {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.why-title {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.why-desc {
+    margin-top: 19px;
+    width: 682px;
+    color: #666;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.layer-services {
+    display: flex;
+    border: 1px solid black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    width: 1440px;
+    padding-top: 24px;
+    padding-bottom: 43px;
+}
+
+.card-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 370px;
+    padding-bottom: 50px;
+}
+
+.img-service {
+    width: 370px;
+    height: 270px;
+}
+
+.crd-service-title {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.crd-service-desc {
+    margin-top: 22px;
+    width: 310px;
+    color: #AAA;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.crd-service-btn {
+    margin-top: 39px;
+    background-color: #F25822;
+    border-radius: 50px;
+    border-width: 0;
+    width: 150px;
+    height: 50px;
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy-Bold;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.lm-msg {
+    margin-left: 20px;
+}
+
+body {
+    padding-bottom: 100px;
+}

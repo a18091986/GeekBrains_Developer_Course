@@ -1,0 +1,275 @@
+/* Общие настройки */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-color-light-black {
+    background-color: #222;
+}
+
+.bg-color-pastel {
+    background-color: #f1e4e6;
+}
+
+.center {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Настройки шрифтов */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+.upcase {
+    text-transform: uppercase;
+}
+
+.font-lato {
+    font-family: Lato;
+    font-style: normal;
+    line-height: normal;
+}
+
+.font-big-bold {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.font-big {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.font-big-small {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.font-medium {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.font-medium-small {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.font-medium-smaller {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.font-small-big {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.font-small-medium {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.txt-clr-black {
+    color: #000000
+}
+
+.txt-clr-light-black {
+    color: #222222
+}
+
+.txt-clr-pink {
+    color: #F16D7F
+}
+
+.txt-clr-dark-pink {
+    color: #F26376;
+}
+
+.txt-clr-white {
+    color: #FFFFFF
+}
+
+.txt-clr-light-gray {
+    color: #9F9F9F
+}
+
+.txt-clr-gray {
+    color: #5D5D5D
+}
+
+/* Настройки верхнего меню */
+
+.header {
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+}
+
+.header__left-block {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    align-items: end;
+}
+
+.header__right-block {
+    display: flex;
+    gap: 25px;
+    align-items: flex-end;
+}
+
+.header-icon {
+    fill: #e8e8e8;
+}
+
+.header-icon:hover {
+    fill: #2d96f8;
+}
+
+/* настройки отображения бренда */
+
+.our-brand-demo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* align-content: center; */
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.more-width {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-brand-text {
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    margin-left: 64px;
+    /* margin-bottom: 91px; */
+}
+
+/* Настройки секции категорий */
+
+.categories {
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.category {
+    position: relative;
+}
+
+.category__img {
+    background-color: rgba(33, 22, 22, 0.70);
+    /* opacity: 0.7; */
+}
+
+.absolute-central {
+    position: absolute;
+    /* margin: 0; */
+    top: 50%;
+    left: 50%;
+    /* margin-right: -50%; */
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.full-width {
+    grid-column: 1/4;
+}
+
+/* Настройки секции популярных товаров */
+
+.featured-items {
+    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.cards-item {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card-item-layout {
+    background-color: #F8F8F8;
+}
+
+.card-item-desc {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.btn-all-product {
+    margin-top: 48px;
+    background-color: #FFFFFF;
+    border: none;
+    border: 1px solid #F26376;
+    padding: 15px 39px;
+}
+
+.btn-all-product:hover {
+    background-color: #F26376;
+    color: #FFFFFF;
+}
+
+.card-img-layout {
+    position: relative;
+}
+
+.card-img-layout:hover {
+    .card-item-to-cart {
+        display: inline;
+    }
+}
+
+.card-item-img {
+    z-index: 1;
+}
+
+.card-item-to-cart {
+    display: none;
+    background-color: #5D5D5D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-to-cart {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    border: none;
+    background:none;
+    border: 1px solid #FFFFFF;
+    padding: 11px 16px 9px 14px;
+    color: #FFFFFF;
+}
+
+.btn-to-cart-layout {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}

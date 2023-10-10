@@ -1,0 +1,67 @@
+.content {
+    margin-top: 84px;
+    display: flex;
+    gap: 41px;
+}
+
+.post {
+    width: 522px;
+}
+
+.post .title {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.post .description {
+    color: #888;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 17px;
+}
+
+.post .control {
+    display: flex;
+    align-items: center;
+    margin-top: 37px;
+    gap: 72px;
+}
+
+.post button {
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.post a {
+    color: #AAA;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.post-img {
+    width: 610.735px;
+    height: 372.904px;
+}
+.post-img img{
+    width: 520px;
+    /* height: 374.843px; */
+}

@@ -1,0 +1,11 @@
+/* неоптимально с точки зрения скорости загрузки */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: content-box; /*размер контента, а paddings, borders плюсуются*/
+    box-sizing: border-box;
+}
+
+/*  */
+
