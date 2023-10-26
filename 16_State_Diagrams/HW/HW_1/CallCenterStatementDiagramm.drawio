@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" modified="2023-10-26T15:46:38.382Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="UItWP9hV25RcjUlN5aG7" version="22.0.8" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2049" dy="1243" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-0" value="IT решение для города Х&#xa;Допустим, в городе X происходят частые пожары, что создает серьезные проблемы&#xa;для местных жителей. Местное правительство решило внедрить систему&#xa;автоматического оповещения о пожарах, чтобы обеспечить безопасность граждан и&#xa;уменьшить количество происшествий. Система включает в себя следующие шаги:&#xa;1. Установка датчиков пожара в каждом здании города, которые регистрируют&#xa;наличие дыма или повышенную температуру в помещении.&#xa;2. При обнаружении признаков пожара датчики отправляют сигнал на центр&#xa;управления пожарной безопасности.&#xa;3. Операторы центра проверяют полученный сигнал и, если это&#xa;подтверждается, отправляют сообщение о пожаре всем зарегистрированным&#xa;пользователям системы (например, жителям города или пожарным частям)&#xa;через СМС или мобильное приложение.&#xa;4. Зарегистрированные пользователи получают оповещение о пожаре и&#xa;информацию о его местоположении, и могут принять необходимые меры:&#xa;вызвать пожарных или проверить, нет ли пожара в своем здании.&#xa;5. Пожарная часть получает уведомление о пожаре и местоположении, и&#xa;направляет на место происшествия бригаду пожарных.&#xa;Такая система позволит городским жителям получать мгновенное оповещение о&#xa;пожарах и быстро принимать меры, чтобы уменьшить возможные повреждения и&#xa;уберечь жизни. Однако, ее эффективность будет зависеть от точности установки&#xa;датчиков, а также от быстроты и точности реакции центра управления и пожарных&#xa;частей.&#xa;Примечание: Вы можете дополнять данный кейс недостающей информацией." style="text;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="185" y="30" width="510" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UoIlekkxCnvFjDWwDRoR-1" target="UoIlekkxCnvFjDWwDRoR-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-5" value="Resieving Fire Detection Signal From Sensor" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UoIlekkxCnvFjDWwDRoR-4">
+          <mxGeometry x="-0.32" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-1" value="Waiting Statement" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="394" y="460" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UoIlekkxCnvFjDWwDRoR-3" target="UoIlekkxCnvFjDWwDRoR-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-3" value="Signal Verification&amp;nbsp;&lt;br&gt;Statement Start" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="374" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UoIlekkxCnvFjDWwDRoR-7" target="UoIlekkxCnvFjDWwDRoR-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-9" value="False Signal" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UoIlekkxCnvFjDWwDRoR-8">
+          <mxGeometry y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.452;entryY=0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UoIlekkxCnvFjDWwDRoR-13" target="UoIlekkxCnvFjDWwDRoR-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-19" value="Send Notifications to Users and FireStation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UoIlekkxCnvFjDWwDRoR-10">
+          <mxGeometry x="0.033" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-7" value="Verification&lt;br&gt;Result" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="180" y="580" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UoIlekkxCnvFjDWwDRoR-7" target="UoIlekkxCnvFjDWwDRoR-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="780" as="targetPoint" />
+            <mxPoint x="220" y="660" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="220" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-15" value="True Signal" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UoIlekkxCnvFjDWwDRoR-14">
+          <mxGeometry x="0.3375" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-13" value="Signal Verification&amp;nbsp;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Statement End" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="374" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UoIlekkxCnvFjDWwDRoR-18" target="UoIlekkxCnvFjDWwDRoR-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="860" />
+              <mxPoint x="630" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-23" value="Recieving Signal About End of Firefighting" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UoIlekkxCnvFjDWwDRoR-22">
+          <mxGeometry x="-0.0381" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoIlekkxCnvFjDWwDRoR-18" value="Waiting for&amp;nbsp; end of firefighting&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="380" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
