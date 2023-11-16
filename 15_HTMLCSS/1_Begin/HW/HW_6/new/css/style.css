@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-family: 'Gilroy';
+
+}
+
+.top {
+    padding-bottom: 0px;
+    max-width: 1200px;
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+
+    text-decoration: none;
+    padding-top: 11px;
+    padding-bottom: 12px;
+    font-family: 'Gilroy-SemiBold';
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.nav_logo {
+
+    float: left;
+}
+
+.nav_menu {
+    display: flex;
+    padding-top: 11px;
+    padding-bottom: 12px;
+}
+
+
+.nav_link {
+    margin-right: 35px;
+}
+
+
+a.nav_link {
+    color: black;
+}
+
+a.nav_link:active {
+    color: #F25822;
+}
+
+a.nav_link:visited {
+    color: black;
+}
+
+a.nav_link_active {
+    margin-right: 35px;
+    color: #F25822;
+}
+
+
+.nav_link_features {
+    margin-right: 25px;
+}
+
+a.nav_link_features {
+    color: black;
+}
+
+.nav_link_features_txt {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav_link_features_txt::after {
+    content: "";
+    display: block;
+    margin-left: 6px;
+    width: 6px;
+    height: 3px;
+    background-size: cover;
+    background-image: url(../img/icon.svg);
+}
+
+
+.top_content {
+    display: flex;
+    justify-content: space-between;
+    gap:38px;
+    margin-top: 84px;
+    margin-bottom: 162px;
+    max-width: 1170px;
+}
+
+
+
+.top_title {
+    margin-top: 84px;
+    font-family: 'Gilroy-Bold';
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.top_info {
+    width: 522px;
+}
+
+
+.top_text {
+    margin-top: 17px;
+    font-family: 'Gilroy-Medium';
+    font-size: 20px;
+    line-height: 23px;
+    color: #888888;
+}
+
+.top_button {
+    display: flex;
+    gap: 72px;
+    margin-top: 37px;
+    font-family: 'Gilroy-Bold';
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.top_src {
+    width: 611px;
+}
+
+.btn_start {
+    display: block;
+    outline: none;
+    border: none;
+    background: #F25822;
+    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+    border-radius: 50px;
+    padding: 15px 30px;
+    color: #FFFFFF;
+}
+
+
+.btn_video {
+    display: block;
+    outline: none;
+    border: none;
+    background: white;
+
+/*    border-radius: 50px;
+    padding: 15px 30px;*/
+    color: #AAAAAA;
+}
+
+.top_img {
+    margin-top: 162px;
+    padding-top: 97px;
+    padding-bottom: 96px;
+    display: flex;
+    gap: 48px;
+    max-width: 1200px;
+    margin-top: 82px;
+}
