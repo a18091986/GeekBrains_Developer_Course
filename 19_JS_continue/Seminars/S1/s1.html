@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S1</title>
+</head>
+<body>
+    <div id="block">
+        <p>1</p>
+        <p>2</p>
+    </div>
+    <p class="www">text 1</p>
+    <p class="www">text 2</p>
+    <div>
+        <a class="link" href="#">link text html</a>
+        <!-- Вам необходимо поменять текст внутри ссылки на “link text js”
+        Заменить href, на значение https://developer.mozilla.org/ru/ -->
+        
+    </div>
+
+    <div>
+        <!-- Дан тег  -->
+        <!-- Вам необходимо с помощью js поменять значение src на любое изображение из интернета -->
+        <img class="photo" src="#" alt="#">
+    </div>
+
+    <div class="content">
+        
+    </div>
+   
+
+    <script>
+        // task1
+        let element = document.querySelector('p')
+        console.log(element)
+        element = document.querySelector('.www')
+        console.log(element)
+        // task2
+        
+        element = document.querySelector('.link')
+        element.textContent = 'link text js'
+        element.setAttribute('href', 'https://developer.mozilla.org/ru/')
+
+        element = document.querySelector('.photo')
+        element.setAttribute('src', 'https://cdn.mskguru.ru/uploads/flats/4488/kvartry-v-4488-zhk-svetlyyjj-mir-stanciya-l-1669799028_6434_l.jpg')
+
+        //task3
+        // Дан тег <div class="content"></> Создайте новый элемент p. Добавьте в него текст “Новый текстовый элемент” 
+        // Добавьте созданный элемент внутри <div class="content"></div>//Удалите добавленный узел
+        
+        const new_p = document.createElement('p');
+        const new_h2 = document.createElement('h2');
+
+        new_p.textContent = 'Новый текстовый элемент'
+        new_h2.textContent = 'Новый заголовок'
+
+        element = document.querySelector('.content')
+        
+        element.appendChild(new_p)
+        element.appendChild(new_h2);
+        
+        document.querySelector('.content p').remove()
+        
+        // task4
+        // Создать элемент button, добавить в блок <div class="content"></div> При клике на который в консоль выводится сколько раз пользователь нажал на данную кнопку
+        let cnt = 0
+        const btn = document.createElement('button');
+        btn.textContent = 'Кнопка'
+        element.appendChild(btn)
+
+        btn.onclick = function () {cnt++; btn.textContent = cnt}        
+
+            
+        // task5
+        // Дан тег <div class="content"></div> Создайте с помощью javascript новый элемент button Добавьте текст для кнопки “Отправить” 
+        // При клике на данную кнопку необходимо чтобы текст поменялся на “Текст отправлен”
+
+        const btn_send = document.createElement('button');
+        btn_send.textContent = 'Отправить';
+        btn_send.onclick = () => {btn_send.textContent = 'Текст отправлен'}
+        element.append(btn_send)
+        
+    </script>
+</body>
+</html>
