@@ -1,0 +1,44 @@
+<!-- <form action="#">
+    <input type="text">
+    <button class="btn">Отправить</button>
+</form>
+Дано поле ввода и кнопка отправить, необходим реализовать функционал, если пользователь нажимает на кнопку отправить, а
+поле ввода пустое, то под полем ввода и кнопкой должен появиться заголовок h2 с текстом вы не заполнили поле ввода
+У поля ввода должна появиться рамка красного цвета -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text">
+        <button class="btn">Отправить</button>
+    </form>
+
+    <script>
+        console.log(document.querySelector('form').children[0]);
+        console.log(document.querySelector('form').firstElementChild);
+        const btn = document.querySelector('.btn');
+        btn.onclick = function () {
+            const new_el = document.createElement('h2');
+            if (document.querySelector('form').firstElementChild.value === '') {
+                new_el.textContent = "НИЧЕГО НЕ НАПИСАЛ!!!";
+                document.querySelector('form').appendChild(new_el)
+                document.querySelector('form').firstElementChild.style.borderColor='red';
+                
+            }
+            else {
+                new_el.textContent = document.querySelector('form').firstElementChild.value;
+                document.querySelector('form').appendChild(new_el)
+            }
+            
+            
+        }
+    </script>
+</body>
+</html>

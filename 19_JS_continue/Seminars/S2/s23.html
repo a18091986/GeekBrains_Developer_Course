@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="elem">
+        <div class="info">
+            <h2 class="subtitle">Lorem, ipsum dolor.</h2>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        
+        get_parents = function (show_in_html) {
+            start_el = document.querySelector('.subtitle')
+            while (start_el.parentElement !== null) {
+                console.log(start_el.parentElement);
+                if (show_in_html) {
+                    const p_el = document.createElement('p');
+                    p_el.textContent = start_el.parentElement.textContent
+                    document.querySelector('.elem').appendChild(p_el);
+
+                }
+                start_el = start_el.parentElement;
+            }
+        } 
+
+        get_parents();
+
+        const btn = document.createElement('button');
+        btn.textContent = "show me all parents elements of h2";
+        
+        document.querySelector('.elem').appendChild(btn);
+        btn.onclick = () => {
+            get_parents(1);
+        }
+
+
+
+
+    </script>
+</body>
+</html>

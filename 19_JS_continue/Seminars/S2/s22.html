@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="elem">
+        <img src="photo.png" alt="photo">
+        <div class="content">
+            <h2 class="heading">Lorem, ipsum dolor.</h2>
+            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, ea!</p>
+        </div>
+    </div>
+    <script>
+        const p_text = document.querySelector('.text')
+        console.log(p_text.previousElementSibling);
+        const content = p_text.parentElement
+        console.log(p_text.parentElement)
+        const img_el = content.previousElementSibling;
+        console.log(img_el)
+        const elem_el = content.parentElement
+        console.log(elem_el);
+        
+        
+        const btn = document.createElement("button");
+        btn.textContent = "Кнопка для нажимания";
+        elem_el.appendChild(btn)
+
+        btn.onclick = function () {
+            // const for_delete = elem_el.lastElementChild;
+            // if (for_delete) {
+            //     elem_el.removeChild(for_delete)
+            // }
+            // console.log(for_delete);
+            const new_el = document.createElement('div');
+            new_el.setAttribute('class', 'send');
+            new_el.textContent = "Вы нажали на кнопку";
+            elem_el.appendChild(new_el);
+        }
+
+    </script>
+    
+
+</body>
+</html>
