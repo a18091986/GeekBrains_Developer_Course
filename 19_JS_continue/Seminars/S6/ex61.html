@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <button id="myBtn1">1</button>
+            <button id="myBtn2">2</button>
+        </div>
+    </div>
+    <script>
+        const outerDiv = document.querySelector('.outer');
+        const innerDiv = document.querySelector('.inner');
+        const myBtn1 = document.querySelector('#myBtn1');
+        const myBtn2 = document.querySelector('#myBtn2');
+        outerDiv.addEventListener('click', function(e) {
+            console.log('OuterDiv');
+        })
+        innerDiv.addEventListener('click', function (e) {
+                console.log('InnerDiv');
+                // e.stopImmediatePropagation() 
+                // e.stopPropagation()
+            })
+        myBtn1.addEventListener('click', function (e) {
+                console.log('Btn1');
+            })
+        myBtn2.addEventListener('click', function (e) {
+                console.log('Btn2');
+                // e.stopPropagation() // предотвращает распространение события на родительские элементы
+            })
+    </script>
+</body>
+</html>
