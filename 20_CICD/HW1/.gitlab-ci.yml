@@ -1,0 +1,37 @@
+image: python:3.13.0a4-slim-bookworm
+
+
+stages:
+  - build
+  - run_py
+  - deploy
+
+build-job:
+  stage: build
+  artifacts:
+    paths:
+      - artifacts/
+    expire_in: 3 hrs
+  script:
+    - mkdir artifacts
+    - echo "Build stage" > artifacts/test_art.txt
+    - echo "to remove" > artifacts/remove.txt
+
+
+run_python_job:
+  stage: run_py
+  script:
+    - echo "Starting python script"
+    - python3 app.py
+
+pages:
+    stage: deploy
+    script:
+        - mkdir -p public
+        - cp artifacts/test_art.txt public/index.html
+        - cp artifacts/remove.txt public/remove.html
+    artifacts:
+        paths:
+            - public
+        exclude:
+            - public/remove.html
