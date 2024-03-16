@@ -1,0 +1,1 @@
+https://www.npmjs.com/package/pass_gen_rand

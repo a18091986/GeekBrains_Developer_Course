@@ -1,11 +1,12 @@
 {
-  "name": "pass_gen",
-  "version": "1.0.0",
+  "name": "pass_gen_rand",
+  "version": "1.0.1",
   "description": "password generating",
   "main": "passgen.js",
   "scripts": {
+    "start": "node ./index.js"
   },
   "author": "a18091986",
   "license": "ISC",
-  "repository":
+  "repository": "https://github.com/a18091986/GeekBrains_Developer_Course/tree/develop/22_NodeJS/HW/HW2"
 }
