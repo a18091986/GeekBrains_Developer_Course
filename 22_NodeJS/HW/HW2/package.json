@@ -1,0 +1,11 @@
+{
+  "name": "pass_gen",
+  "version": "1.0.0",
+  "description": "password generating",
+  "main": "passgen.js",
+  "scripts": {
+  },
+  "author": "a18091986",
+  "license": "ISC",
+  "repository":
+}
