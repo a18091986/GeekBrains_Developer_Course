@@ -1,8 +1,8 @@
 const initialValue =  `[
     {
-        "name": "Йога",
-        "photograph": "vggh",
-        "likes": 15
+        "name": "test",
+        "photograph": "test",
+        "likes": 25
     }
 ]`;
 
@@ -65,7 +65,7 @@ async function renderPhoto() {
 }
 
 let like = 1;
-const counterButton = document.querySelector(".image_likes-button");
+const counterButton = document.querySelector(".likeButton");
 counterButton.addEventListener("click", function () {
   const likesCounter = document.querySelector(".image_likes-counter");
   const currentCounter = parseInt(likesCounter.textContent, 10);
