@@ -1,0 +1,3 @@
+npm init react-app hw5
+cd my-app
+npm start
