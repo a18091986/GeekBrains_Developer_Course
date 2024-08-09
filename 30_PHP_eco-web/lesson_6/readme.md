@@ -54,4 +54,3 @@ php runner -c queue_manager
 ```
 ![img1](img/rmq_1.png)
 ![img2](img/rmq_2.png)
-![img3](img/rmq_3.png)
